@@ -29,7 +29,9 @@
         private void InitializeComponent()
         {
             this.dgbpokemons = new System.Windows.Forms.DataGridView();
+            this.pcbPokemon = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgbpokemons)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbPokemon)).BeginInit();
             this.SuspendLayout();
             // 
             // dgbpokemons
@@ -41,17 +43,29 @@
             this.dgbpokemons.RowTemplate.Height = 24;
             this.dgbpokemons.Size = new System.Drawing.Size(459, 328);
             this.dgbpokemons.TabIndex = 0;
+            this.dgbpokemons.SelectionChanged += new System.EventHandler(this.dgbpokemons_SelectionChanged);
+            // 
+            // pcbPokemon
+            // 
+            this.pcbPokemon.Location = new System.Drawing.Point(539, 76);
+            this.pcbPokemon.Name = "pcbPokemon";
+            this.pcbPokemon.Size = new System.Drawing.Size(322, 274);
+            this.pcbPokemon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbPokemon.TabIndex = 1;
+            this.pcbPokemon.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(897, 575);
+            this.Controls.Add(this.pcbPokemon);
             this.Controls.Add(this.dgbpokemons);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgbpokemons)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbPokemon)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -59,6 +73,7 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgbpokemons;
+        private System.Windows.Forms.PictureBox pcbPokemon;
     }
 }
 

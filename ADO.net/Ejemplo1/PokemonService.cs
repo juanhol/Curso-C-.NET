@@ -22,7 +22,7 @@ namespace Example1
 
                 connection.ConnectionString = "server=.\\SQLEXPRESS; database=POKEDEX_DB; integrated security=true";
                 command.CommandType= System.Data.CommandType.Text;
-                command.CommandText = "select Numero, Nombre, Descripcion from POKEMONS";
+                command.CommandText = "Select P.Numero, P.Nombre, P.Descripcion, E.Descripcion as Tipo, D.Descripcion as Debilidad, P.UrlImagen  from POKEMONS P, ELEMENTOS E, ELEMENTOS D where E.Id=P.IdTipo And D.Id=P.IdDebilidad";
                 command.Connection = connection; 
 
                 connection.Open();
@@ -30,9 +30,15 @@ namespace Example1
 
                 while (reader.Read()) {
                 Pokemon aux=new Pokemon();
+                    
                     aux.Number = reader.GetInt32(0);
                     aux.Name = (string)reader["Nombre"];
                     aux.Description = (string)reader["Descripcion"];
+                    aux.ImageUrl = (string)reader["UrlImagen"];
+                    aux.Type = new Element();
+                    aux.Type.Description = (String)reader["Tipo"];
+                    aux.Weakness=new Element();
+                    aux.Weakness.Description = (String)reader["Debilidad"];
 
                     list.Add(aux);
                 }
@@ -42,8 +48,8 @@ namespace Example1
             }
             catch (Exception ex)
             {
-
-                throw;
+                
+                throw ex;
             }
         }
         
