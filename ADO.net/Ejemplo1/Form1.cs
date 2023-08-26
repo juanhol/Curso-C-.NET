@@ -8,6 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using domain;
+using service;
+
 
 namespace Ejemplo1
 {
@@ -45,6 +48,12 @@ namespace Ejemplo1
 
                 pcbPokemon.Load("https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png");
             }
+        }
+
+        private void btnAddPokemon_Click(object sender, EventArgs e)
+        {
+            LoadPokemon load=new LoadPokemon();
+            load.ShowDialog();
         }
     }
 }
