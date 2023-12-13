@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentacion", "Presentacion\Presentacion.csproj", "{1E35E5E7-9F9D-4BDD-A60C-B9B8251EC58D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{D6FBFAC5-ABEA-4CF6-9B96-01F91FECC78C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "Business\Business.csproj", "{5151043A-CEDF-4FD0-B901-78AD72A8A9EC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E35E5E7-9F9D-4BDD-A60C-B9B8251EC58D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E35E5E7-9F9D-4BDD-A60C-B9B8251EC58D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E35E5E7-9F9D-4BDD-A60C-B9B8251EC58D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E35E5E7-9F9D-4BDD-A60C-B9B8251EC58D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6FBFAC5-ABEA-4CF6-9B96-01F91FECC78C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6FBFAC5-ABEA-4CF6-9B96-01F91FECC78C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6FBFAC5-ABEA-4CF6-9B96-01F91FECC78C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6FBFAC5-ABEA-4CF6-9B96-01F91FECC78C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5151043A-CEDF-4FD0-B901-78AD72A8A9EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5151043A-CEDF-4FD0-B901-78AD72A8A9EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5151043A-CEDF-4FD0-B901-78AD72A8A9EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5151043A-CEDF-4FD0-B901-78AD72A8A9EC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2AE109CC-CD6B-46BD-A6B2-39893DA81267}
+	EndGlobalSection
+EndGlobal
